@@ -70,5 +70,6 @@ async def predict(file: UploadFile = File(...)):
     return {'Class': predicted_class, 'Confidence': float(confidence)}
 
 
-if __name__ == "__main__":
-    uvicorn.run(app, host='0.0.0.0', port=8080)
+# python web server
+if __name__ == '__main__':
+    app.run(debug=True, port=os.getenv("PORT", default=5000))
