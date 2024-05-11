@@ -1,2 +1,0 @@
-# cropguardpro
-A university project
